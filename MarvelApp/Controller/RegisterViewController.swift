@@ -23,9 +23,6 @@ class RegisterViewController: UIViewController {
         signupButton.layer.cornerRadius = 5
     }
     
-    override open var shouldAutorotate: Bool {
-        return false
-    }
     
     @IBAction func signUpPressed(_ sender: UIButton) {
         

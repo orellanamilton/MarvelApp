@@ -33,9 +33,6 @@ class EventsDetailsViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    override open var shouldAutorotate: Bool {
-        return false
-    }
     
 }
 

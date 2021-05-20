@@ -37,10 +37,6 @@ class AuthViewController: UIViewController {
         loginButton.layer.cornerRadius = 5
     }
     
-    override open var shouldAutorotate: Bool {
-        return false
-    }
-    
     @IBAction func loginPressed(_ sender: UIButton) {
         if let email = authEmail.text, let password = authPassword.text {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in

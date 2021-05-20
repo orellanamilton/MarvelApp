@@ -40,9 +40,6 @@ class EventsViewController: UIViewController {
         .joined()
     }
     
-    override open var shouldAutorotate: Bool {
-        return false
-    }
     
     func EventsAPI() {
         let hash = MD5(data: "1\(privateKey)\(publicKey)")

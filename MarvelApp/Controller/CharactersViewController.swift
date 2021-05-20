@@ -24,10 +24,6 @@ class CharactersViewController: UIViewController {
         CharactersAPI()
     }
     
-    override open var shouldAutorotate: Bool {
-        return false
-    }
-    
     var publicKey = "8f32a6fa5d6428ef9d5aac4148a5ff83"
     var privateKey = "026722947f71fa964186c43fe604d49a36d6317a"
     let urlBase = "https://gateway.marvel.com:443/v1/public/characters?ts=1"

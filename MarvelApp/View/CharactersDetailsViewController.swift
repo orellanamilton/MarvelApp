@@ -37,10 +37,6 @@ class CharactersDetailsViewController: UIViewController {
         }
     }
     
-    override open var shouldAutorotate: Bool {
-        return false
-    }
-
 }
 
 extension CharactersDetailsViewController: UITableViewDelegate, UITableViewDataSource {
