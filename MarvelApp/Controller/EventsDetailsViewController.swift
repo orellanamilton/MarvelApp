@@ -33,7 +33,6 @@ class EventsDetailsViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    
 }
 
 extension EventsDetailsViewController: UITableViewDelegate, UITableViewDataSource {
