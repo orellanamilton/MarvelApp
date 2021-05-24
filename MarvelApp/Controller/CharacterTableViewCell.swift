@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class CharacterTableViewCell: UITableViewCell {
     @IBOutlet weak var characterImage: UIImageView!

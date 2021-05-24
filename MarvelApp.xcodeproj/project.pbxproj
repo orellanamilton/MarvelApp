@@ -26,6 +26,7 @@
 		C071855D2653F193002B0A60 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071855B2653F193002B0A60 /* CharacterTableViewCell.swift */; };
 		C071855E2653F193002B0A60 /* CharacterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C071855C2653F193002B0A60 /* CharacterTableViewCell.xib */; };
 		C07185602653F9AF002B0A60 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071855F2653F9AF002B0A60 /* UIImageViewExtension.swift */; };
+		C076849B265C224D00C55FDA /* HeroHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C076849A265C224D00C55FDA /* HeroHelper.swift */; };
 		C08DA25F264AF8F2007B6065 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C08DA25E264AF8F2007B6065 /* GoogleService-Info.plist */; };
 		C0AC0349264AB1280074F5B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC0348264AB1280074F5B6 /* AppDelegate.swift */; };
 		C0AC034B264AB1280074F5B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AC034A264AB1280074F5B6 /* SceneDelegate.swift */; };
@@ -55,6 +56,7 @@
 		C071855B2653F193002B0A60 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		C071855C2653F193002B0A60 /* CharacterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterTableViewCell.xib; sourceTree = "<group>"; };
 		C071855F2653F9AF002B0A60 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		C076849A265C224D00C55FDA /* HeroHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroHelper.swift; sourceTree = "<group>"; };
 		C08DA25E264AF8F2007B6065 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C0AC0345264AB1280074F5B6 /* MarvelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AC0348264AB1280074F5B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C0237786264B3E350041A8AA /* CharactersData.swift */,
+				C076849A265C224D00C55FDA /* HeroHelper.swift */,
 				C071855F2653F9AF002B0A60 /* UIImageViewExtension.swift */,
 			);
 			path = Model;
@@ -299,6 +302,7 @@
 				C01F2DEE264B0D7F008C0A96 /* RegisterViewController.swift in Sources */,
 				C07185602653F9AF002B0A60 /* UIImageViewExtension.swift in Sources */,
 				C0237783264B2B4B0041A8AA /* AuthViewController.swift in Sources */,
+				C076849B265C224D00C55FDA /* HeroHelper.swift in Sources */,
 				C01F2DF3264B0D9E008C0A96 /* EventViewController.swift in Sources */,
 				C071855D2653F193002B0A60 /* CharacterTableViewCell.swift in Sources */,
 				C04935EA2654BCFB0073FCD0 /* EventsDetailsViewController.swift in Sources */,

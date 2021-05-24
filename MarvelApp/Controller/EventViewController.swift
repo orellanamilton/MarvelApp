@@ -8,11 +8,22 @@
 import UIKit
 import Alamofire
 import CryptoKit
+import Hero
 
 class EventsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var events: [Results] =  []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        enableHero()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        disableHero()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +85,7 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell") as! EventTableViewCell
         cell.configure(for: event)
         cell.selectionStyle = .none
+        cell.heroID = "eventCell"
         return cell
     }
     
@@ -81,7 +93,7 @@ extension EventsViewController: UITableViewDelegate, UITableViewDataSource {
         let storyboard = UIStoryboard(name: "EventsDetails", bundle: nil)
         if let viewController = storyboard.instantiateInitialViewController() as? EventsDetailsViewController {
             viewController.event = self.events[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.showHero(viewController)
         }
     }
 }

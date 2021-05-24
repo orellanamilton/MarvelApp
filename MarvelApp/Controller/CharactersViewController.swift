@@ -8,11 +8,23 @@
 import UIKit
 import CryptoKit
 import Alamofire
+import Hero
+
 
 class CharactersViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var character: [Results] =  []
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        enableHero()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        disableHero()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,14 +85,16 @@ extension CharactersViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell") as! CharacterTableViewCell
         cell.selectionStyle = .none
         cell.configure(for: character)
+        cell.heroID = "characterCell"
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         let storyboard = UIStoryboard(name: "CharactersDetails", bundle: nil)
         if let viewController = storyboard.instantiateInitialViewController() as? CharactersDetailsViewController {
             viewController.character = self.character[indexPath.row]
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.showHero(viewController)
         }
     }
 }

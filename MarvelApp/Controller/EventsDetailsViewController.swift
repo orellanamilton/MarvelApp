@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class EventsDetailsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +27,7 @@ class EventsDetailsViewController: UIViewController {
         let image = "\(event.thumbnail.path)/landscape_incredible.\(event.thumbnail.thumbnailExtension)"
         eventImage.setImage(imageURL: image)
         
+        eventImage.heroID = "characterCell"
         
         heightConstant.constant = CGFloat(Double(event.comics.items.count) * 55)
         

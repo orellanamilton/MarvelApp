@@ -8,6 +8,6 @@ target 'MarvelApp' do
   pod 'FacebookLogin'
   pod 'Alamofire', '~> 5.2'
   pod 'Kingfisher', '~> 6.0'
-  
+  pod 'Hero'
   
 end

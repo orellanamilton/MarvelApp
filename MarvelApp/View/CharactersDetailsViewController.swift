@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Hero
 
 class CharactersDetailsViewController: UIViewController {
     @IBOutlet weak var characterImage: UIImageView!
@@ -29,6 +30,8 @@ class CharactersDetailsViewController: UIViewController {
         
         let image = "\(character.thumbnail.path)/landscape_incredible.\(character.thumbnail.thumbnailExtension)"
         characterImage.setImage(imageURL: image)
+        
+        characterImage.heroID = "characterCell"
         
         if character.description == "" {
             descriptionLabel.text = "No description"
